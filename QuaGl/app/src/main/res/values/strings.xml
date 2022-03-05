@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quadratic Equation</string>
+    <string name="title" translatable="false">ax² bx + c = 0</string>
+    <string name="a" translatable="false">a</string>
+    <string name="b" translatable="false">b</string>
+    <string name="c" translatable="false">c</string>
+    <string name="factorA">Factor a</string>
+    <string name="factorB">Factor b</string>
+    <string name="summandC">Summand c</string>
+    <string name="calculate">Calculate</string>
+    <string name="wrongInput">Wrong Entry</string>
+    <string name="aMustNotBeZero">a must not be zero</string>
+    <string name="x1" translatable="false">x1</string>
+    <string name="x2" translatable="false">x2</string>
+    <string name="numberofresults">Number of Results</string>
+
+</resources>

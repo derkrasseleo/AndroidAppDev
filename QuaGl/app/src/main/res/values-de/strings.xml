@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quadratische Gleichung</string>
+    <string name="factorA" >Faktor a</string>
+    <string name="factorB">Faktor b</string>
+    <string name="summandC">Summand c</string>
+    <string name="calculate">Berechnen</string>
+    <string name="wrongInput">Falsche Eingabe</string>
+    <string name="aMustNotBeZero">a darf nicht Null sein</string>
+    <string name="x1" translatable="false">x1</string>
+    <string name="x2" translatable="false">x2</string>
+    <string name="numberofresults">Anzahl der Ergebnisse</string>
+</resources>
