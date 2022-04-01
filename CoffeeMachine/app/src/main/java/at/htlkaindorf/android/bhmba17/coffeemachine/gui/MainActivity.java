@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
         for(Coffee coffee: Coffee.values())
         {
             final RadioButton radioButton = new RadioButton(this);
-            radioButton.setText(coffee.getText());
+            radioButton.setText(coffee.getText() + "(" + coffee.getPreisInCent() + " ¢)");
             radioGroup.addView(radioButton);
 
             if(coffee.ordinal()==0)
@@ -50,5 +50,18 @@ public class MainActivity extends AppCompatActivity
         final int coin = Integer.parseInt(view.getTag().toString());
         credits.addCreditsInCents(coin);
         updateCredits();
+    }
+    public void onCancel(View view)
+    {
+        // TODO: Geldrückgabe
+        credits.resetCredits();
+        updateCredits();
+    }
+
+    @Override
+    protected void onStop() {
+        credits.save(this);
+        super.onStop();
+
     }
 }

@@ -7,9 +7,17 @@ public enum Coffee {
     {
         "Mokka", "Kleiner Brauner", "Franziskaner", "Melange", "Fiaker"
     };
+    private final static int[] preisInCent =
+    {
+        150,180,200,180,250
+    };
 
     public String getText()
     {
         return text[ordinal()];
+    }
+    public int getPreisInCent()
+    {
+        return preisInCent[ordinal()];
     }
 }

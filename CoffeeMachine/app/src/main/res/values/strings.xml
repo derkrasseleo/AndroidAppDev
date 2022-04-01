@@ -3,4 +3,5 @@
     <string name="insertCoin" translatable="true">Muenze einwerfen</string>
     <string name="sugar">Zucker</string>
     <string name="credits">Guthaben</string>
+    <string name="coffeToGo" translatable="false">Coffee to go</string>
 </resources>

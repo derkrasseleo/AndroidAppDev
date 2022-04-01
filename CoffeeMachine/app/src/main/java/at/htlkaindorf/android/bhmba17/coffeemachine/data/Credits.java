@@ -1,6 +1,9 @@
 package at.htlkaindorf.android.bhmba17.coffeemachine.data;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+
+import java.util.prefs.Preferences;
 
 public class Credits
 {
@@ -23,11 +26,17 @@ public class Credits
 
     public void save(Context context)
     {
-
+        final SharedPreferences preferences =
+                context.getSharedPreferences("credits.prefs", Context.MODE_PRIVATE);
+        final SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt("creditsInCents", creditsInCents);
+        editor.apply();
     }
 
     public void load(Context context)
     {
-
+        final SharedPreferences preferences =
+                context.getSharedPreferences("credits.prefs", Context.MODE_PRIVATE);
+        creditsInCents = preferences.getInt("creditsInCents", 0);
     }
 }

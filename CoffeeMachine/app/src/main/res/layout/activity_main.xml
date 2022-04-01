@@ -59,6 +59,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCoin"
+                android:tag="5"
                 android:text="5¢"
                 android:textSize="18sp" />
 
@@ -67,6 +69,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCoin"
+                android:tag="10"
                 android:text="10¢"
                 android:textSize="18sp" />
         </TableRow>
@@ -80,6 +84,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCoin"
+                android:tag="20"
                 android:text="20¢"
                 android:textSize="18sp" />
 
@@ -88,6 +94,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCoin"
+                android:tag="50"
                 android:text="50¢"
                 android:textSize="18sp" />
         </TableRow>
@@ -101,6 +109,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCoin"
+                android:tag="100"
                 android:text="1€"
                 android:textSize="18sp" />
 
@@ -109,6 +119,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCoin"
+                android:tag="200"
                 android:text="2€"
                 android:textSize="18sp" />
         </TableRow>
@@ -133,24 +145,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="32dp"
-        android:text="Cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/btCoffeeToGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/coffeToGo"
+        app:layout_constraintEnd_toStartOf="@+id/btCoffeeToGo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGuthaben" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:text="Coffee to go"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:onClick="onCancel"
+        android:text="@android:string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv0000" />
 
     <SeekBar
         android:id="@+id/zuckerSeekBar"
